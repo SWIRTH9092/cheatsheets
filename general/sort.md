@@ -4,8 +4,6 @@
 
     - Steve Griffith - Sorting Complex Objects in Javascript:  https://www.youtube.com/watch?v=AmQ1OX7XBJw
 
-#### Sort Objects
-
 ###### Object String Sorts
 
 
@@ -18,9 +16,9 @@
         //           Return: 0   - the values are equal
 
         export function byName(a,b) {
-            if (a.gl_Name > b.gl_Name ) {
+            if (a.gl_Name.toUpperCase() > b.gl_Name.toUpperCase() ) {
                 return 1; 
-            } else if (a.gl_Name < b.gl_Name)  { 
+            } else if (a.gl_Name.toUpperCase() < b.gl_Name.toUpperCase())  {
                 return -1;
             } else {
                 return 0;
